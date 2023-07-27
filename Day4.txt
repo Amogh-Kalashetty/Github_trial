@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo $1
+echo $2
+echo $3
+
+day=$1
+
+for ((i=$2; i<=$3; i++))
+do
+  mkdir  "$day$i"
+done
+
+
+
+
+
+To take backup and create a tar file
+#!/bin/bash
+
+tar -cvf /backup_folder/backup.tar /home/ubuntu/automation_script_files
+
+cd /backup_folder
+
+du -sh
